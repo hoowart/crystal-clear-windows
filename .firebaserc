@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "ccwindow-fb6d6"
+  },
+  "targets": {},
+  "etags": {
+    "ccwindow-fb6d6": {
+      "extensionInstances": {}
+    }
+  }
+}
