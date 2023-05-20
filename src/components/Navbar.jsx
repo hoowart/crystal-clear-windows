@@ -24,14 +24,14 @@ const Navbar = () => {
 
   let Links =[
     {name:"About", link:"/about"},
-    {name:"Gallery", link:"/gallery"},
+    {name:"Services", link:"/services"},
     {name:"Contact Us", link:"/contact"}
   ];
   return (
     <>
         <div className="max-w-[1240px] mx-auto h-16 flex top-0 right-0 left-0 p-1 justify-between items-center font-poppins">
           <h1 className="text-xl ml-4 tracking-wider">
-            CRYSTAL CLEAR WINDOWS
+            CRYSTAL CLEAR SERVICES
           </h1>
           <ul className="hidden md:flex list-none gap-10 text-l p-6">
             {
