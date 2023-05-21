@@ -28,12 +28,10 @@ function App() {
   return (
     <>
     <Navbar />
-      <div className="container">
-        <Routes>
-          <Route index element={<About />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route index element={<About />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   )
 }

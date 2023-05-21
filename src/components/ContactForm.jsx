@@ -11,11 +11,15 @@ const ContactForm = () => {
     const onSubmit = (e) => {
         emailjs.sendForm('service_zqcihvy', 'template_6n5tg88', form.current, '_SrbCF9XycSCBM-JO')
           .then((result) => {
+            console.log(result)
               alert("Your message has been sent and we will get back to your email as soon as possible. Thank you.")
               location.reload()
           }, (error) => {
+            console.log(error)
               alert("There has been an error. Please try again.")
           });
+
+
       };
 
     const { values, errors, handleBlur, touched, handleChange, handleSubmit, isValid, isSubmitting } = useFormik({
@@ -29,7 +33,6 @@ const ContactForm = () => {
       validationSchema: basicSchema,
       onSubmit
     });
-    console.log(errors.name)
 
     
 
