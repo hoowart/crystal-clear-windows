@@ -43,10 +43,12 @@ const ContactForm = () => {
              className="text-black font-montserrat">
             <div className="flex-col flex space-y-2 ">
 
-                <label htmlFor="name" className="text-sm">
-                    Name
-                </label>
-                <div className={errors.name && touched.name ? "block text-sm text-red-400" : "hidden"}>{errors.name}</div>
+                <div className="flex">
+                    <label htmlFor="name" className="text-sm">
+                        Name
+                    </label>
+                    <div className={errors.name && touched.name ? "block text-sm text-red-400 indent-1 font-poppins" : "hidden"}>{errors.name}</div>
+                </div>
                 <input
                     id="name"
                     type="name" 
@@ -58,10 +60,12 @@ const ContactForm = () => {
                     onBlur={handleBlur}
                 />
                 
-                <label htmlFor="phone" className="text-sm">
-                    Phone Number
-                </label>
-                <div className={errors.phone && touched.phone ? "block text-sm text-red-400" : "hidden"}>{errors.phone}</div>
+                <div className="flex">
+                    <label htmlFor="phone" className="text-sm">
+                        Phone Number
+                    </label>
+                    <div className={errors.phone && touched.phone ? "block text-sm text-red-400 indent-1 font-poppins" : "hidden"}>{errors.phone}</div>
+                </div>
                 <input
                     id="phone"
                     type="phone" 
@@ -74,11 +78,12 @@ const ContactForm = () => {
                 />
                 
 
-
-                <label htmlFor="email" className="text-sm">
-                    Email Address
-                </label>
-                <div className={errors.email && touched.email ? "block text-sm text-red-400" : "hidden"}>{errors.email}</div>
+                <div className="flex">
+                    <label htmlFor="email" className="text-sm">
+                        Email Address
+                    </label>
+                    <div className={errors.email && touched.email ? "block text-sm text-red-400 indent-1 font-poppins" : "hidden"}>{errors.email}</div>
+                </div>
                 <input
                     id="email"
                     type="email" 
@@ -90,11 +95,12 @@ const ContactForm = () => {
                     
                 />
                 
-
-                <label htmlFor="address" className="text-sm">
-                    Address
-                </label>
-                <div className={errors.address && touched.address ? "block text-sm text-red-400" : "hidden"}>{errors.address}</div>
+                <div className="flex">
+                    <label htmlFor="address" className="text-sm">
+                        Address
+                    </label>
+                    <div className={errors.address && touched.address ? "block text-sm text-red-400 indent-1 font-poppins" : "hidden"}>{errors.address}</div>
+                </div>
                 <input
                     id="address"
                     type="address" 
@@ -106,11 +112,12 @@ const ContactForm = () => {
                     
                 />
                 
-
-                <label htmlFor="city" className="text-sm">
-                    City
-                </label>
-                <div className={errors.city && touched.city ? "block text-sm text-red-400" : "hidden"}>{errors.city}</div>
+                <div className="flex">
+                    <label htmlFor="city" className="text-sm">
+                        City
+                    </label>
+                    <div className={errors.city && touched.city ? "block text-sm text-red-400 indent-1 font-poppins" : "hidden"}>{errors.city}</div>
+                </div>
                 <input
                     id="city"
                     type="city" 
