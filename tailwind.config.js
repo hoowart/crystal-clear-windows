@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "1.5xl": "1490px",
+        "xmd": "1184px",
+      },
       colors: {
         'night': '#141612',
         'afwhite': '#E9EBEC',

@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import { useFormik } from 'formik'
-import { basicSchema } from '../Schemas'
+import { basicSchema } from '../Schemas/index'
 import emailjs from '@emailjs/browser'
 
 
@@ -12,7 +12,7 @@ const ContactForm = () => {
         emailjs.sendForm('service_zqcihvy', 'template_6n5tg88', form.current, '_SrbCF9XycSCBM-JO')
           .then((result) => {
             console.log(result)
-              alert("Your message has been sent and we will get back to your email as soon as possible. Thank you.")
+              alert("Your request has been sent and we will get back to your email as soon as possible. Thank you.")
               location.reload()
           }, (error) => {
             console.log(error)
