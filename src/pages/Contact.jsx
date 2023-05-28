@@ -12,8 +12,8 @@ const Contact = () => {
         <div className="bg-gradient-to-r from-blue-500 to-polyblue rounded-md p-2 flex items-center shadow-night shadow-md">
           <ContactForm />
         </div>
-        <div className="bg-gradient-to-r from-blue-500 to-polyblue rounded-md p-2 flex items-center shadow-night shadow-md mt-20 mb-40">
-          <div className="p-8 font-poppins text-white w-[400px]">
+        <div className="bg-gradient-to-r from-blue-500 to-polyblue rounded-md xsm:p-2 flex items-center shadow-night shadow-md mt-20 mb-40">
+          <div className="p-8 font-poppins text-white w-[360px]">
             <h1 className="text-xl flex justify-center">Call us to get it done ASAP!</h1>
               <div className="font-montserrat flex justify-evenly m-10">
                 <div className="flex-col">
